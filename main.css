@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:wght@200;400&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav{
+    text-decoration: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: #0497c7;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+.content h1{
+    font-size: 80px;
+}
+
+.content p{
+    font-size: 20px;
+    line-height: 60px;
+
+}
+
+.content button{
+    width: 200px;
+    padding: 20px 5px;
+    text-align: center;
+    margin: 25px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0497c7;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content span{
+    background: #0497c7;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s ;
+}
+
+button:hover span{
+    width: 100%;
+
+}
+
+.header{
+    text-align: center;
+}
+
+.header p{
+    color: gray;
+}
+
+
+hr{
+    width: 80%;
+}
+
+.outdoor_content h3, .sauna_content h3, .service_content h3{
+    font-size: 30px;
+
+}
+
+#fee{
+    color: #8cc43c;
+}
+
+
+marquee{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-parent{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+
+.about{
+    background-color: #1C1D22;
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background: white;
+    width: 25%;
+    overflow: hidden;
+}
+
+.form-input, .form-button{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    border:none;
+}
+
+
+.form-item{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    max-width: 550px;
+    border: 10px solid white;
+    border-radius: 2em;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+.form-input{
+    padding: 1.5em;
+}
+
+.form button{
+    padding: 10px;
+    background-color: #0497c7;
+    color: white;
+    font-weight: 400;
+}
+
+.form button:hover{
+    background-color: #8cc43c;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+#signup{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    font-weight: 400px;
+}
+
+.checkbox{
+    margin: auto;
+    width: auto;
+    padding: 3px;
+}
+
+
+
+.footer_content{
+    margin: 0;
+    padding: 0;
+    background-color: #1C1D22;
+}
+
+.social_parent{
+    display: flex;
+}
+
+.social_parent ul{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.social_content{
+    list-style: none;
+}
+
+.social_content a{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.quick_links{
+    display: flex;
+    margin-top: 10px;
+}
+
+.service_row{
+    margin-bottom: 30px;
+}
+
+.quick_links ul{
+    display: flex;
+}
+
+.quick_content{
+    list-style: none;
+}
+
+.quick_content a{
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.quick_content a:hover{
+    font-weight: bold;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #1C1D22;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*                                                                                MEMBERSHIP                                                                                       */
+
+#title{
+    margin-left: 23%;
+    color: whitesmoke;
+    padding: 50px;
+    
+}
+
+.row-memb{
+    display: flex;
+    flex-direction: row;
+}
+
+iframe{
+    margin: auto;
+    margin-top: 70px;
+}
+
+table{
+    table-layout: fixed;
+    padding: 10px 15px;
+}
+
+th{
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+
+
+  /*                                                                                GIFT      SHOP                                                                                       */
+
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.cards h3{
+    color: white;
+    font-weight: bold;
+}
+
+.cards p{
+    color: #bca48c;
+    margin: 20px;
+}
+
+.cards button{
+    margin: 10px;
+    width: 40%;
+    height: 40px;
+    background-color: #0497c7;
+    border:none;
+    color: white;
+    font-weight: bold;
+}
+
+.card, .card2, .card3{
+    width: 20rem;
+    height: 30rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card-inner, .card-inner2, .card-inner3 {
+    position: relative;
+    background-size: cover;
+
+}
+
+.cards button:hover{
+    cursor: pointer;
+    background-color: #8cc43c;
+}

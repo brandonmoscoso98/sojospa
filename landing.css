@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:wght@200;400&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url('images/spa.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav{
+    text-decoration: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: #0497c7;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+.content h1{
+    font-size: 80px;
+}
+
+.content p{
+    font-size: 20px;
+    line-height: 60px;
+
+}
+
+.content button{
+    width: 200px;
+    padding: 20px 5px;
+    text-align: center;
+    margin: 25px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0497c7;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content span{
+    background: #0497c7;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s ;
+}
+
+button:hover span{
+    width: 100%;
+
+}
+
+.header{
+    text-align: center;
+}
+
+.header p{
+    color: gray;
+}
+
+
+hr{
+    width: 80%;
+}
+
+.outdoor_content h3, .sauna_content h3, .service_content h3{
+    font-size: 30px;
+
+}
+
+#fee{
+    color: #8cc43c;
+}
+
+.outdoor_row, .service_row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    margin-left: 40px;
+}
+
+.outdoor_row img, .service_row img{
+    max-height: 30%;
+    max-width: 30%;
+    margin: 10px;
+    border: 10px solid #8cc43c;
+    border-radius: 5%;
+}
+
+.outdoor_content, .service_content{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    color: #5c3c3c;
+}
+
+.outdoor_content ul li, .sauna_content ul li, .service_content ul li{
+    list-style-position: inside;
+    column-count: 2;
+    column-gap: 5px;
+    column-fill: auto;
+    color: #bca48c;
+}
+
+
+.sauna_row img{
+    max-height: 30%;
+    max-width: 30%;
+    margin: 10px;
+    border: 10px solid #0497c7;
+    border-radius: 5%;
+}
+
+.sauna_content{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    color: #5c3c3c;
+}
+
+.sauna_row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-flow: row-reverse;
+    margin-left: 40px;
+}
+
+.footer_content{
+    margin: 0;
+    padding: 0;
+    background-color: #1C1D22;
+}
+
+.social_parent{
+    display: flex;
+}
+
+.social_parent ul{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.social_content{
+    list-style: none;
+}
+
+.social_content a{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.quick_links{
+    display: flex;
+    margin-top: 10px;
+}
+
+.service_row{
+    margin-bottom: 30px;
+}
+
+.quick_links ul{
+    display: flex;
+}
+
+.quick_content{
+    list-style: none;
+}
+
+.quick_content a{
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.quick_content a:hover{
+    font-weight: bold;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #1C1D22;
+    display: flex;
+    justify-content: center;
+}
+
+/*                                                                         CHECKOUT                                 PAGE                                                                  */
+
+
+.schedule-wrapper{
+    width: 700px;
+    background: white;
+    padding: 1em;
+    margin: 1em auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    opacity: .9;
+}
+
+.schedule-wrapper h1{
+    justify-content: center;
+    display: flex;
+}
+
+.schedule-wrapper label{
+    display: block;
+}
+
+.schedule-wrapper input{
+    display: block;
+    font-size: 1.2em;
+    padding: 0.25em;
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 3px;
+    border: 1px solida #bababa;
+}
+
+.schedule-wrapper button{
+    display: inline-block;
+    border: none;
+    font-size: 0.9rem;
+    padding: 10px 35px;
+    color: white;
+    background: #0497c7;
+    font-weight: bold;
+    margin: 0 0.25rem;
+    text-align: center;
+}
+
+.schedule-wrapper button:hover, .schedule-wrapper button:focus{
+    opacity: 0.75;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.1) inset;
+    cursor: pointer;
+}
+
+#people{
+    width: 135px;
+}
+
+.submit-people-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.terms{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    float: left;
+    margin: 5px;
+}
+
+.terms label{
+    display: flex;
+}
+
+
+#radio{
+    width: auto;
+    height: 20px;
+}
+
+.booking h3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.booking button{
+    width: 30%;
+    margin: auto;
+}
